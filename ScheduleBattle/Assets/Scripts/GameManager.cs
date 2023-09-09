@@ -171,7 +171,7 @@ public class GameManager : MonoBehaviour
         } else{
             tile.GetComponent<Tile>().SetTileColor(1, new Color32(38, 57, 76, 255));
             tile.GetComponent<Tile>().SwitchColors(1);
-            topText.text = "Missed.";
+            topText.text = "Missed";
         }
         Invoke("EndPlayerTurn", 2.0f);
     }
@@ -186,7 +186,7 @@ public class GameManager : MonoBehaviour
                 playerShipText.text = playerShipCount.ToString();
             }
         } else{
-            topText.text = "Missed.";
+            topText.text = "Missed";
         }
         Invoke("EndEnemyTurn", 2.0f);
     }
